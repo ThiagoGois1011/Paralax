@@ -1,0 +1,161 @@
+.apresentacao{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    
+}
+
+.apresentacao_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ilutracao_de_cidade.jpg)  no-repeat top / cover  fixed ;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.apresentacao_container{
+    width: 30vw;
+    margin-left: 8vw;
+}
+
+.apresentacao_container h1{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Croissant One";
+}
+
+.apresentacao_container h2{
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-family: "Roboto Condensed";
+}
+
+.apresentacao_navegacao{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 30vw;
+    margin-right: 8vw;
+    
+}
+
+.apresentacao_navegacao_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: white;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+
+.apresentacao_navegacao ul{
+    list-style: square;
+    padding: 20px 40px;
+}
+
+.apresentacao_navegacao li{
+    font-size: 1.5em;
+    margin: 20px 0 0 0;
+    
+}
+
+.apresentacao_navegacao_ul li:nth-child(1){
+    margin: 0 0 20px 0;
+}
+
+.apresentacao_navegacao a{
+    text-decoration: none;
+    color: #363636; 
+    font-family: "Roboto Condensed";
+}
+
+.apresentacao_navegacao a:hover{
+    color: #02135c;
+    text-decoration: underline;
+}
+
+.section{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_container{
+    margin: 0 8vw;
+}
+
+.section_container h3{
+    margin: 100px 0 40px 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.section_container p {
+    font-size: 1.5em;
+    margin-bottom: 100px;
+}
+
+
+.section_ilustracao{
+    width: 100%;
+    height: 50vh;
+}
+
+.tema_escuro{
+    background-color:#282e34;
+}
+
+.tema_escuro h3, .tema_escuro p{
+    color: white;
+}
+
+.estados_unidos{
+    background: url(../img/Estados-Unidos-Nova-York.jpg)  no-repeat top / cover  fixed ;  
+}
+
+.japao{
+    background: url(../img/tokyo.jpg)  no-repeat top / cover  fixed ;
+}
+
+.suica{
+    background: url(../img/suica.jpg)  no-repeat top / cover  fixed ;
+}
+
+.brasil{
+    background: url(../img/brasil.jpg)  no-repeat top / cover  fixed ;
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+
+    .apresentacao{
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    .apresentacao_container, .apresentacao_navegacao{
+        margin: 0;
+        width: 90vw;
+    }
+    
+}
+
